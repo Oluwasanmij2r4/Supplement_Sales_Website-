@@ -85,15 +85,100 @@ header{
 p:nth-of-type(4) span{
     color: green;
 }
-.sec2 p:nth-of-type(5){
+.sec2 p:nth-of-type(5), p:nth-of-type(8){
     font-weight: 500;
     padding-bottom: 50px;
 }
 .sec2 img{
     max-width: 80%;
 }
+.sec2 h1:nth-of-type(3){
+    font-family: Lucida Calligraphy, Lucida Handwriting, cursive;
+    color: green;
+    margin-bottom: 0;
+}
+.sec3 img{
+    max-width: 80%;
+}
+.sec3 h2{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.sec3 h1{
+    margin: 40px;
+}
+#spec{
+    background-color: green;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.boxA{
+    display: grid;
+    background-color: rgb(243, 244, 245);
+    max-width: 80%;
+    margin: 50px;
+    padding: 0 0 20px 0;
+}
+.box1, .box2, .box3, .box4{
+    display: grid;
+}
+.boxA img{
+    max-width: 40%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.boxA p, h2{
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+
 @media only screen and (min-width: 768px){
     .Real-body{
         max-width: 80%;
     }
+    .desk{
+        display: flex;
+        justify-content: space-around
+    }
+    .desk img{
+        width: 350px;
+        height: 450px;
+    }
+    #spec{
+        margin-bottom: 0;
+    }
+    .boxB{
+        display: flex;
+        border: 2px solid green;
+        gap: 10px;
+        border-radius: 15px;
+        border-top-right-radius:0;
+        border-top-left-radius: 0;
+        background-color: rgb(243, 244, 245);
+    }
+    .boxA{
+        display: flex;
+        flex-direction: column;  
+    }
+    .boxA img{
+        max-width: 100%;
+    }
+    .boxA p, h2{
+        margin-top: 10px;
+        padding: 0;
+    }
+    .box1, .box2, .box3{
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid green; 
+        padding: 15px;
+    }
+    .box4{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
 }
