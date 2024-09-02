@@ -1,21 +1,6 @@
 *{
     box-sizing: border-box;
 }
-h1{
-    font-size: 36px;
-    padding: 30px;
-}
-h2{
-    font-size: 30px;
-    padding: 5px 30px;
-    line-height: 40px;
-}
-p{
-    font-size: 16px;
-    line-height: 24px;
-    color: black;
-    padding: 30px;
-}
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(242, 243, 245);
@@ -23,12 +8,35 @@ body{
     padding: 0;
     max-width: 100%;
 }
+h1{
+    font-size: 36px;
+    padding: 30px;
+}
+h2{
+    font-size: 30px;
+    line-height: 35px;
+}
+p{
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    padding: 10px;
+}
+ul{
+    text-align: left;
+    line-height: 24px;
+    font-weight: 500;
+}
+li{
+    margin: 5px;
+}
 .Real-body{
     max-width: 100%;
     margin: auto;
     background-color: white;
     margin: 0 auto;
     text-align: center;
+    padding: 0 30px;
 }
 .head{
     display: flex;
@@ -53,9 +61,11 @@ header{
 }
 .sec1 h1{
     margin-top: 0;
+    margin-bottom: 5px;
 }
-.sec1 h2{
-    margin: 0;
+
+.sec1 h2, .sec2 h2{
+    margin-top: 30px;
     text-align: left;
     color: red;
     font-size: 20px;
@@ -63,17 +73,25 @@ header{
 .sec1 img{
     max-width: 80%;
 }
-.sec1 p{
+.specP{
     text-align: left;
     font-size: medium;
     font-weight: 600;
+    margin-bottom: 0;
 }
-.sec1 ul{
-    text-align: left;
-    line-height: 24px;
+.sec2 h1{
+    padding-bottom: 0;
+}
+p:nth-of-type(4) span{
+    color: green;
+}
+.sec2 p:nth-of-type(5){
     font-weight: 500;
+    padding-bottom: 50px;
 }
-
+.sec2 img{
+    max-width: 80%;
+}
 @media only screen and (min-width: 768px){
     .Real-body{
         max-width: 80%;
