@@ -1,36 +1,43 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(242, 243, 245);
     margin: 0;
     padding: 0;
     max-width: 100%;
 }
-h1{
+
+h1 {
     font-size: 36px;
     padding: 30px;
 }
-h2{
+
+h2 {
     font-size: 30px;
     line-height: 35px;
 }
-p{
+
+p {
     font-size: 16px;
     line-height: 24px;
     color: black;
     padding: 10px;
 }
-ul{
+
+ul {
     text-align: left;
     line-height: 24px;
     font-weight: 500;
 }
-li{
+
+li {
     margin: 5px;
 }
-.Real-body{
+
+.Real-body {
     max-width: 100%;
     margin: auto;
     background-color: white;
@@ -38,179 +45,293 @@ li{
     text-align: center;
     padding: 0 30px;
 }
-.head{
+
+.head {
     display: flex;
     justify-content: start;
     gap: 10px;
 }
-header{
+
+header {
     background-color: green;
     color: white;
     padding: 10px;
 }
-.head img{
+
+.head img {
     width: 68px;
     height: 68px;
     border: 2px solid green;
     border-radius: 50%;
 }
-.head h1{
+
+.head h1 {
     margin-top: 0;
     margin-bottom: 5px;
     padding: 0;
 }
-.sec1 h1{
+
+.sec1 h1 {
     margin-top: 0;
     margin-bottom: 5px;
 }
 
-.sec1 h2, .sec2 h2{
+.sec1 h2,
+.sec2 h2 {
     margin-top: 30px;
     text-align: left;
     color: red;
     font-size: 20px;
 }
-.sec1 img{
+
+.sec1 img {
     max-width: 80%;
 }
-.specP{
+
+.specP {
     text-align: left;
     font-size: medium;
     font-weight: 600;
     margin-bottom: 0;
 }
-.sec2 h1{
+
+.sec2 h1 {
     padding-bottom: 0;
 }
-p:nth-of-type(4) span{
+
+p:nth-of-type(4) span {
     color: green;
 }
-.sec2 p:nth-of-type(5), p:nth-of-type(8){
+
+.sec2 p:nth-of-type(5),
+p:nth-of-type(8) {
     font-weight: 500;
     padding-bottom: 50px;
 }
-.sec2 img{
+
+.sec2 img {
     max-width: 80%;
 }
-.sec2 h1:nth-of-type(3){
+
+.sec2 h1:nth-of-type(3) {
     font-family: Lucida Calligraphy, Lucida Handwriting, cursive;
     color: green;
     margin-bottom: 0;
 }
-.sec3 img{
+
+.sec3 img {
     max-width: 80%;
 }
-.sec3 h2{
+
+.sec3 h2 {
     margin-bottom: 10px;
     margin-top: 0;
 }
-.sec3 h1{
+
+.sec3 h1 {
     margin: 40px;
 }
-#spec{
+
+#spec {
     background-color: green;
     margin-bottom: 10px;
     margin-top: 0;
 }
-.boxA{
+
+.boxA {
     display: grid;
     background-color: rgb(243, 244, 245);
     max-width: 80%;
     margin: 50px;
     padding: 0 0 20px 0;
 }
-.box1, .box2, .box3, .box4{
+
+.box1,
+.box2,
+.box3,
+.box4 {
     display: grid;
 }
-.boxA img{
+
+.boxA img {
     max-width: 40%;
     margin-top: 20px;
     margin-bottom: 5px;
 }
-.boxA p, h2{
+
+.boxA p,
+h2 {
     margin: 0;
     padding: 0 10px;
 }
-.sec4{
+
+.sec4 {
     background-color: green;
     color: rgb(0, 0, 0);
     padding: 10px;
 }
-.sec4 h1{
-   margin: 0;
-   padding: 10px;
-   background-color: black;
-   color: white;
+
+.sec4 h1 {
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
 }
 
-.sec4 span{
+.sec4 span {
     color: red;
 }
-#text{
+
+#text {
     background-color: white;
     border: 2px solid green;
     color: green;
 }
 
-.price{
+.price {
     background-color: white;
-    max-width: 70%;
+    max-width: 100%;
     margin: 20px auto;
+    padding: 10px;
 }
-.sec5 h1{
-margin-bottom: 0px;
-padding-bottom: 0px;
+
+.sec5 h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
-.sec5 p{
+
+.sec5 p {
     font-size: 18px;
 }
 
+.contact p {
+    margin: 0;
+    padding: 10px;
+    color: red;
+    font-weight: bold;
+}
 
-@media only screen and (min-width: 768px){
-    .Real-body{
+.contact h1 {
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.contact h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+Form {
+    text-align: left;
+    background-color: rgb(243, 244, 245);
+    margin: 0;
+    padding: 10px;
+    max-width: 100%;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+#fname,
+#phone,
+#state {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    min-width: 350px;
+    height: 30px;
+}
+
+#address {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.plan{
+    margin: 10px 0;
+}
+form small{
+    font-size: 16px;
+    font-weight: 540;
+}
+.button{
+    background-color: green;
+    border: 2px solid white;
+    padding: 15px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+    .Real-body {
         max-width: 80%;
     }
-    .desk{
+
+    .desk {
         display: flex;
         justify-content: space-around
     }
-    .desk img{
+
+    .desk img {
         width: 350px;
         height: 450px;
     }
-    #spec{
+
+    #spec {
         margin-bottom: 0;
     }
-    .boxB{
+
+    .boxB {
         display: flex;
         border: 2px solid green;
         gap: 10px;
         border-radius: 15px;
-        border-top-right-radius:0;
+        border-top-right-radius: 0;
         border-top-left-radius: 0;
         background-color: rgb(243, 244, 245);
     }
-    .boxA{
+
+    .boxA {
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
     }
-    .boxA img{
+
+    .boxA img {
         max-width: 100%;
     }
-    .boxA p, h2{
+
+    .boxA p,
+    h2 {
         margin-top: 10px;
         padding: 0;
     }
-    .box1, .box2, .box3{
+
+    .box1,
+    .box2,
+    .box3 {
         display: flex;
         flex-direction: column;
-        border-right: 2px solid green; 
-        padding: 15px;
-    }
-    .box4{
-        display: flex;
-        flex-direction: column;
+        border-right: 2px solid green;
         padding: 15px;
     }
 
+    .box4 {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    #fname,
+    #phone,
+    #state {
+        margin-top: 5px;
+        margin-bottom: 25px;
+        width: 100%;
+        height: 30px;
+    }
 }
