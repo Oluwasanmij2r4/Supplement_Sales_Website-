@@ -4,20 +4,19 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(242, 243, 245);
+    background-color: white;
     margin: 0;
     padding: 0;
     max-width: 100%;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 32px;
     padding: 30px;
 }
 
 h2 {
     font-size: 30px;
-    line-height: 35px;
 }
 
 p {
@@ -38,7 +37,7 @@ li {
 }
 
 .Real-body {
-    max-width: 100%;
+    max-width: 90%;
     background-color: white;
     margin: 0 auto;
     text-align: center;
@@ -55,7 +54,7 @@ li {
 header {
     background-color: green;
     color: white;
-    padding: 10px;
+    padding: 30px;
 }
 
 .head img {
@@ -75,13 +74,13 @@ header {
     margin-top: 0;
     margin-bottom: 5px;
 }
+.sec1 span, .sec2 span{
+    color: green;
+}
 
-.sec1 h2,
 .sec2 h2 {
     margin-top: 30px;
     text-align: left;
-    color: red;
-    font-size: 20px;
 }
 
 .sec1 img {
@@ -91,7 +90,7 @@ header {
 .specP {
     text-align: left;
     font-size: medium;
-    font-weight: 600;
+    /* font-weight: 500; */
     margin-bottom: 0;
 }
 
@@ -133,6 +132,7 @@ p:nth-of-type(8) {
 }
 
 #spec {
+    text-align: center;
     background-color: green;
     margin-bottom: 10px;
     margin-top: 0;
@@ -244,12 +244,14 @@ label {
     margin-top: 5px;
     margin-bottom: 25px;
     min-width: 350px;
-    height: 30px;
+    padding: 10px;
 }
 
 #address {
     margin-top: 5px;
     margin-bottom: 25px;
+    resize: none;
+    padding: 10px;
 }
 
 .plan {
@@ -264,7 +266,8 @@ form small {
 .button {
     background-color: green;
     border: 2px solid white;
-    padding: 15px;
+    border-radius: 50px;
+    padding: 8px;
     width: 200px;
     color: white;
     font-size: 20px;
@@ -286,18 +289,18 @@ h2 {
 }
 
 .enquiry small {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
 }
 
 .WhatsApp,
 .call {
-    display: flex;
-    justify-content: center;
-    max-width: 300px;
+    max-width: 150px;
+    border: 1px solid green;
+    border-radius: 50px;
     margin: 30px auto;
-    padding: 20px;
+    padding: 10px 0px;
     background-color: green;
 }
 footer {
@@ -312,6 +315,9 @@ footer p{
 }
 
 @media only screen and (min-width: 768px) {
+    body{
+        background-color: rgb(242, 243, 245);
+    }
     .Real-body {
         max-width: 80%;
     }
@@ -376,6 +382,6 @@ footer p{
         margin-top: 5px;
         margin-bottom: 25px;
         width: 100%;
-        height: 30px;
+        padding: 10px;
     }
 }
